@@ -1,0 +1,7 @@
+let gimmeacat = document.getElementById("Cat")
+let gimmeadog = document.getElementById("Dog")
+let gimmeabutterfly = document.getElementById("Butterfly")
+let gimmeadolfin = document.getElementById("Dolfin")
+let gimmeaboat = document.getElementById("Boat")
+let gimmeaTree = document.getElementById("Tree")
+let gimmeaeric = document.getElementById("Eric")
