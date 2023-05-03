@@ -1,0 +1,108 @@
+#triangle-code1{
+    display : inline-block;
+    top: 350px;
+    left:875px;
+    height : 0px;
+    width : 0px;
+    border-top : 150px solid transparent;
+    border-right : 150px solid red;
+    border-bottom : 150px solid transparent;
+    position: absolute;
+    rotate: 90deg;
+   }
+
+   #triangle-code2{
+    display : inline-block;
+    top: 350px;
+    left:875px;
+    height : 0;
+    width : 0;
+    border-right : 150px solid transparent;
+    border-bottom : 150px solid rgb(255, 174, 0);
+    border-left : 150px solid transparent;
+    position: absolute;
+    rotate: -90deg;
+   }
+
+   #triangle-code3{
+    display : inline-block;
+    top: 425px;
+    left: 800px;
+    height : 0;
+    width : 0;
+    border-top : 75px solid transparent;
+    border-bottom : 75px solid transparent;
+    border-left : 75px solid rgb(4, 0, 255);
+    position: absolute;
+   }
+   
+   #triangle-code4{
+    display : inline-block;
+    rotate: -90deg;
+    top: 275px;
+    left: 800px;
+    height : 0;
+    width : 0;
+    border-top : 150px solid rgb(21, 255, 0);
+    border-left : 150px solid transparent;
+    position: absolute;
+   }
+
+   #triangle-code5{
+    display : inline-block;
+    top: 350px;
+    left: 875px;
+    height : 0;
+    width : 0;
+    border-top : 75px solid rgb(0, 225, 255);
+    border-right : 75px solid transparent;
+    border-left : 75px solid transparent;
+    position: absolute;
+   }
+
+   #losange-90{
+    width  : 0;
+    height : 0;
+    position : relative;
+    top : 275px;
+    left:800px;
+    border : 75px solid transparent;
+    border-bottom-color : green;
+    position: absolute;
+  }
+
+  #losange-90:after {
+    width  : 0;
+    height : 0;
+    content : '';
+    position : absolute;
+    left : -75px;
+    top  : 75px;
+    border : 75px solid transparent;
+    border-top-color : green;
+    position: absolute;
+  }
+
+  #parallelogramme {
+    top: 107px;
+    left: 266px;
+    width  : 50px;
+    height : 0;
+    border-top  : 75px solid rgb(128, 0, 111);
+    border-right : 75px solid transparent;
+    position : relative;
+    
+  }
+
+  #parallelogramme:after {
+    width  : 50px;
+    height : 0;
+    content: '';
+    border-bottom : 75px solid rgb(128, 0, 111);
+    border-left  : 75px solid transparent;
+    border-right   : 25px solid transparent;
+    position : absolute;
+    top  : -75px;
+    right: 0px;
+  }
+  
