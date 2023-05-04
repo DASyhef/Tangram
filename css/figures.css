@@ -1,0 +1,113 @@
+.figure {
+  position: absolute;
+}
+
+.red {
+  display: inline-block;
+  height: 0px;
+  width: 0px;
+  border-top: 100px solid transparent;
+  border-right: 100px solid red;
+  border-bottom: 100px solid transparent;
+  rotate: 90deg;
+}
+
+.yellow {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid rgb(255, 174, 0);
+  border-left: 100px solid transparent;
+  rotate: -90deg;
+}
+
+.blue {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid rgb(4, 0, 255);
+}
+
+.brown {
+  display: inline-block;
+  rotate: -90deg;
+  height: 0;
+  width: 0;
+  border-top: 100px solid rgb(128, 41, 41);
+  border-left: 100px solid transparent;
+}
+
+.orange {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 50px solid rgb(255, 145, 0);
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+}
+
+.green {
+  width: 75px;
+  height: 75px;
+  transform: rotate(45deg);
+  background-color: green;
+}
+
+.purple {
+  width: 75px;
+  height: 50px;
+  transform: skew(-45deg);
+  background-color: purple;
+}
+
+@media (min-width: 768px) {
+  .red {
+    border-top: 150px solid transparent;
+    border-right: 150px solid red;
+    border-bottom: 150px solid transparent;
+    rotate: 90deg;
+  }
+
+  .yellow {
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid rgb(255, 174, 0);
+    border-left: 150px solid transparent;
+    rotate: -90deg;
+  }
+
+  .blue {
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    border-left: 75px solid rgb(4, 0, 255);
+  }
+
+  .brown {
+    rotate: -90deg;
+    border-top: 150px solid rgb(128, 41, 41);
+    border-left: 150px solid transparent;
+  }
+
+  .orange {
+    border-top: 75px solid rgb(255, 145, 0);
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+  }
+
+  .green {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background-color: green;
+  }
+
+  .purple {
+    width: 100px;
+    height: 75px;
+    transform: skew(-45deg);
+    background-color: purple;
+  }
+
+}
