@@ -1,24 +1,59 @@
-#triangle-code1 {
-}
 
-#triangle-code2 {}
+  .red.boat{
+    transform: rotate(180deg);
+  }
+  
+  .yellow {
+    
+  }
+  
+  .blue {
+    
+  }
+  
+  .brown {
+    
+  }
+  
+  .orange {
+    
+  }
+  
+  .green {
+    
+  }
+  
+  .purple {
+    
+  }
+  
+  @media (min-width: 768px) {
+    .red {
+      
+    }
+  
+    .yellow {
 
-#triangle-code3 {}
-
-#triangle-code4 {}
-
-#triangle-code5 {}
-
-#losange-90 {}
-
-#losange-90:after {
-    left: -75px;
-    top: 75px;
-}
-
-#parallelogramme {}
-
-#parallelogramme:after {
-    top: -75px;
-    right: 0px;
-}
+    }
+  
+    .blue {
+      
+    }
+  
+    .brown {
+      
+    }
+  
+    .orange {
+     
+    }
+  
+    .green {
+      
+    }
+  
+    .purple {
+     
+    }
+  
+  }
