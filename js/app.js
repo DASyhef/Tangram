@@ -123,13 +123,13 @@ document.getElementById("btnThree").addEventListener('click', function() {
 
 //
 document.getElementById("btnFour").addEventListener('click', function() {
-    document.querySelector(".red").setAttribute('class', 'figure red ');
-    document.querySelector(".green").setAttribute('class', 'figure green ');
-    document.querySelector(".blue").setAttribute('class', 'figure blue ');
-    document.querySelector(".yellow").setAttribute('class', 'figure yellow ');
-    document.querySelector(".purple").setAttribute('class', 'figure purple ');
-    document.querySelector(".brown").setAttribute('class', 'figure brown ');
-    document.querySelector(".orange").setAttribute('class', 'figure orange ');
+    document.querySelector(".red").setAttribute('class', 'figure red dog');
+    document.querySelector(".green").setAttribute('class', 'figure green dog');
+    document.querySelector(".blue").setAttribute('class', 'figure blue dog');
+    document.querySelector(".yellow").setAttribute('class', 'figure yellow dog');
+    document.querySelector(".purple").setAttribute('class', 'figure purple dog');
+    document.querySelector(".brown").setAttribute('class', 'figure brown dog');
+    document.querySelector(".orange").setAttribute('class', 'figure orange dog');
 });
 
 //
