@@ -7,7 +7,7 @@
 }
 
 .blue.cedric {
-    transform: translate(-40px, 100px) rotate(315deg);
+    transform: translate(-90px, 270px) rotate(-45deg);
 }
 
 .yellow.cedric {
@@ -15,13 +15,13 @@
 }
 
 .purple.cedric {
-    transform: translate(50px, 140px) rotate(-135deg) skew(-45deg);
+    transform: translate(115px, 390px) rotate(45deg) skew(45deg);
 }
 
 .brown.cedric {
-    transform: translate(-50px, 110px) rotate(180deg);
+    transform: translate(-50px, 370px) rotate(180deg);
 }
 
 .orange.cedric {
-    transform: translate(110px, 70px) rotate(225deg);
+    transform: translate(130px, 270px) rotate(225deg);
 }
