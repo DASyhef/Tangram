@@ -1,27 +1,39 @@
 .red.dog {
-    transform: translate(-150px, 100px) rotate(45deg);
+  z-index: 1;
+  transform: translate(-150px, 100px) rotate(45deg);
 }
 
 .green.dog {
-    transform: translate(65px, 200px) rotate(0deg);
+  z-index: 1;
+  transform: translate(65px, 200px) rotate(0deg);
 }
 
 .blue.dog {
-    transform: translate(-120px, 230px) rotate(45deg);
+  z-index: 1;
+  transform: translate(-120px, 230px) rotate(45deg);
 }
 
 .yellow.dog {
     transform: translate(65px, 95px) rotate(135deg);
+    z-index: 1;
 }
 
 .purple.dog {
-    transform: translate(172px, -60px) rotate(270deg) skew(45deg);
+  z-index: 1;
+  transform: translate(172px, -60px) rotate(270deg) skew(45deg);
 }
 
 .brown.dog {
     transform: translate(225px, 50px) rotate(315deg);
+    z-index: 1;
 }
 
 .orange.dog {
-    transform: translate(-285px, 70px) rotate(09deg);
+  z-index: 1;
+  transform: translate(-285px, 70px) rotate(09deg);
+}
+
+.canvas.dog {
+  z-index: 0;
+  background-image: none;
 }
