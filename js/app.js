@@ -17,11 +17,11 @@ function AddFigures() {
 
     //Change names of buttons
     document.querySelector("#btnOne").innerHTML = "Carré";
-    document.querySelector("#btnTwo").innerHTML = "2";
+    document.querySelector("#btnTwo").innerHTML = "Chat";
     document.querySelector("#btnThree").innerHTML = "Bateau";
-    document.querySelector("#btnFour").innerHTML = "4";
+    document.querySelector("#btnFour").innerHTML = "Chien";
     document.querySelector("#btnFive").innerHTML = "Ours";
-    document.querySelector("#btnSix").innerHTML = "6";
+    document.querySelector("#btnSix").innerHTML = "Cheval";
     document.querySelector("#btnSeven").innerHTML = "Papillon";
 
 
