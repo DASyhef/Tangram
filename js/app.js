@@ -50,11 +50,29 @@ function AddFigures() {
     newLink3.setAttribute('rel', 'stylesheet');
     newLink3.setAttribute('href', 'css/figure10bis.css');
 
-    // Timer
     const newButton4 = document.createElement("button");
     Buttons.appendChild(newButton4);
-    newButton4.setAttribute('id', 'btnTimer');
-    newButton4.innerHTML = "Stop/Start Timer";
+    newButton4.setAttribute('id', 'DIY');
+    newButton4.innerHTML = "Faites le vous-même";
+
+    const newLink4 = document.createElement("link");
+    Head.appendChild(newLink4);
+    newLink4.setAttribute('rel', 'stylesheet');
+    newLink4.setAttribute('href', 'css/figure11.css');
+
+    const newScript1 = document.createElement("script");
+    Head.appendChild(newScript1);
+    newScript1.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
+ 
+    const newScript2 = document.createElement("script");
+    Head.appendChild(newScript2);
+    newScript2.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js');
+
+    // Timer
+    const newButton5 = document.createElement("button");
+    Buttons.appendChild(newButton5);
+    newButton5.setAttribute('id', 'btnTimer');
+    newButton5.innerHTML = "Stop/Start Timer";
 }
 AddFigures()
 
@@ -199,6 +217,7 @@ document.getElementById("btnSecret").addEventListener('click', function () {
 });
 
 document.getElementById("btnBonus").addEventListener('click', function () {
+
     document.querySelector(".red").setAttribute('class', 'figure red greg');
     document.querySelector(".green").setAttribute('class', 'figure green greg');
     document.querySelector(".blue").setAttribute('class', 'figure blue greg');
@@ -208,8 +227,46 @@ document.getElementById("btnBonus").addEventListener('click', function () {
     document.querySelector(".orange").setAttribute('class', 'figure orange greg');
     document.querySelector(".canvas").setAttribute('class', 'canvas greg');
     CVEric.innerHTML = " ";
+
 });
 
+document.getElementById("DIY").addEventListener('click', function () {
+    document.querySelector(".red").setAttribute('class', 'figure red draggable');
+    document.querySelector(".green").setAttribute('class', 'figure green draggable');
+    document.querySelector(".blue").setAttribute('class', 'figure blue draggable');
+    document.querySelector(".yellow").setAttribute('class', 'figure yellow draggable');
+    document.querySelector(".purple").setAttribute('class', 'figure purple draggable');
+    document.querySelector(".brown").setAttribute('class', 'figure brown draggable');
+    document.querySelector(".orange").setAttribute('class', 'figure orange draggable');
+    document.querySelector(".canvas").setAttribute('class', 'canvas square');
+    CVEric.innerHTML = " ";
+
+    $(document).ready(function() {
+        
+        $('.draggable').draggable({
+            containment:'window',
+            stack: '.draggable',
+		    snap: true,
+		    snapMode: 'outer',
+		    snapTolerance: 13,
+        });
+
+    // Make blocks rotate 45 deg on each click
+        var angle = 45;    
+
+        $('.draggable').click(function() {
+           
+            $(this).css ({
+                '-webkit-transform': 'rotate(' + angle + 'deg)',
+                   '-moz-transform': 'rotate(' + angle + 'deg)',
+                     '-o-transform': 'rotate(' + angle + 'deg)',
+                    '-ms-transform': 'rotate(' + angle + 'deg)'
+            });
+            angle+=45;
+        });
+    
+});
+})
 
 // TIMER TO AUTOMATICALLY CHANGE FIGURES //
 
@@ -220,15 +277,30 @@ let counter = 0;
 //Square Figure on load page
 Square()
 
-//The Timer
-setInterval(() => {
-    //Change counter each time to change figure
-    counter = (counter + 1);
-    //Return to Square if precedent figure is Turtle
-    if (counter === 8) {
-        counter = 0;
+// The Timer //
+let timerStatus = false;
+let intervalId;
+
+//Button to enable or disable Timer
+document.getElementById("btnTimer").addEventListener("click", () => {
+    //Activate the timer if variable on "false"
+    if (!timerStatus) {
+        intervalId = setInterval(() => {
+            counter = (counter + 1);
+            //If element to loop the Timer
+            if (counter === 8) {
+                counter = 0;
+            }
+            FiguresList[counter](); //Function to change the figures
+            console.log(FiguresList[counter])
+        }, 5000);
+        timerStatus = true;
+        console.log("Statut du Timer =", timerStatus)
     }
-    //Display the next figure
-    FiguresList[counter]();
-    console.log(FiguresList[counter]);
-}, 15000);
+    //Disable the timer if variable on "true"
+    else {
+        clearInterval(intervalId); //Stop the Timer
+        timerStatus = false;
+        console.log("Statut du Timer =", timerStatus)
+    }
+});

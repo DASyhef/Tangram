@@ -3,6 +3,13 @@
   transform: translate(-150px, 100px) rotate(45deg);
 }
 
+.figure {
+  position: absolute;
+  transition: all 2s;
+  height: 0px;
+  width: 0px;
+}
+
 .green.dog {
   z-index: 1;
   transform: translate(65px, 200px) rotate(0deg);

@@ -2,6 +2,13 @@
     background-image: none;
 }
 
+.figure {
+  position: absolute;
+  transition: all 2s;
+  height: 0px;
+  width: 0px;
+}
+
 .red.cat {
   z-index: 1;
   transform: translate(2px, 195px) rotate(225deg);

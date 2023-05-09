@@ -1,0 +1,53 @@
+.draggable {
+    transition: none !important;
+}
+
+.red.draggable {
+    z-index: 1;
+    border-top: 150px solid transparent !important;
+    border-right: 150px solid red !important;
+    border-bottom: 150px solid transparent !important;
+  }
+  
+  .green.draggable {
+    z-index: 1;
+    background-color: green;
+  }
+  
+  .blue.draggable {
+    z-index: 1;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    border-left: 75px solid rgb(4, 0, 255);
+}
+  
+  .yellow.draggable {
+    z-index: 1;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid rgb(255, 174, 0);
+    border-left: 150px solid transparent;
+  }
+  
+  .purple.draggable {
+    z-index: 1;
+    background-color: purple;
+  }
+  
+  .brown.draggable {
+    z-index: 1;
+    border-top: 150px solid rgb(128, 41, 41);
+    border-left: 150px solid transparent;
+  }
+  
+  .orange.draggable {
+    z-index: 1;
+    border-top: 75px solid rgb(255, 145, 0);
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+  }
+  
+  .canvas.draggable {
+    z-index: 0;
+    background-image: none;
+  }
+  

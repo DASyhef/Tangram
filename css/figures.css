@@ -1,9 +1,4 @@
-.figure {
-    position: absolute;
-    transition: all 2s;
-    height: 0px;
-    width: 0px;
-}
+
 
 .red {
     border-top: 150px solid transparent;
@@ -35,15 +30,15 @@
 }
 
 .green {
-    width: 105px;
-    height: 105px;
+    width: 105px !important;
+    height: 105px !important;
     transform: rotate(45deg);
     background-color: green;
 }
 
 .purple {
-    width: 106px;
-    height: 106px;
+    width: 106px !important;
+    height: 106px !important;
     transform: skew(-45deg);
     background-color: purple;
 }
