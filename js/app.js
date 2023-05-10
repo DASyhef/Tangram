@@ -63,7 +63,7 @@ function AddFigures() {
     const newScript1 = document.createElement("script");
     Head.appendChild(newScript1);
     newScript1.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
- 
+
     const newScript2 = document.createElement("script");
     Head.appendChild(newScript2);
     newScript2.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js');
@@ -73,7 +73,13 @@ function AddFigures() {
     Buttons.appendChild(newButton5);
     newButton5.setAttribute('id', 'btnTimer');
     newButton5.innerHTML = "Stop/Start Timer";
+
+    const newButton6 = document.createElement("button");
+    Buttons.appendChild(newButton6);
+    newButton6.setAttribute('id', 'Reload');
+    newButton6.innerHTML = "Page Reload";
 }
+
 AddFigures()
 
 
@@ -241,31 +247,35 @@ document.getElementById("DIY").addEventListener('click', function () {
     document.querySelector(".canvas").setAttribute('class', 'canvas square');
     CVEric.innerHTML = " ";
 
-    $(document).ready(function() {
-        
+    $(document).ready(function () {
+
         $('.draggable').draggable({
-            containment:'window',
+            containment: 'window',
             stack: '.draggable',
-		    snap: true,
-		    snapMode: 'outer',
-		    snapTolerance: 13,
+            snap: true,
+            snapMode: 'outer',
+            snapTolerance: 13,
         });
 
-    // Make blocks rotate 45 deg on each click
-        var angle = 45;    
+        // Make blocks rotate 45 deg on each click
+        var angle = 45;
 
-        $('.draggable').click(function() {
-           
-            $(this).css ({
+        $('.draggable').click(function () {
+
+            $(this).css({
                 '-webkit-transform': 'rotate(' + angle + 'deg)',
-                   '-moz-transform': 'rotate(' + angle + 'deg)',
-                     '-o-transform': 'rotate(' + angle + 'deg)',
-                    '-ms-transform': 'rotate(' + angle + 'deg)'
+                '-moz-transform': 'rotate(' + angle + 'deg)',
+                '-o-transform': 'rotate(' + angle + 'deg)',
+                '-ms-transform': 'rotate(' + angle + 'deg)'
             });
-            angle+=45;
+            angle += 45;
         });
-    
-});
+
+    });
+})
+
+document.getElementById("Reload").addEventListener('click', function () {
+    window.location.reload();
 })
 
 // TIMER TO AUTOMATICALLY CHANGE FIGURES //
@@ -304,3 +314,4 @@ document.getElementById("btnTimer").addEventListener("click", () => {
         console.log("Statut du Timer =", timerStatus)
     }
 });
+
