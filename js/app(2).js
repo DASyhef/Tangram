@@ -1,4 +1,4 @@
-const Body = document.querySelector("body");
+const body = document.querySelector("body");
 let CVEric = document.createElement("a");
 
 //Add buttons and links for each new figures
